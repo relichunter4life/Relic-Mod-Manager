@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net48</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <LangVersion>latest</LangVersion>
+    <AssemblyName>RelicModManager</AssemblyName>
+    <RootNamespace>RelicMods</RootNamespace>
+    <PlatformTarget>x64</PlatformTarget>
+    <ApplicationIcon>relic.ico</ApplicationIcon>
+    <Version>0.7.1</Version>
+    <Product>Relic Mod Manager</Product>
+    <Company>Relic Hunter</Company>
+    <Copyright>Made by Claude Ai &amp; Relic Hunter</Copyright>
+    <GenerateResourceUsePreserializedResources>false</GenerateResourceUsePreserializedResources>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <DebugType>none</DebugType>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Web.WebView2" Version="1.0.2903.40" />
+    <PackageReference Include="SharpCompress" Version="0.38.0" />
+    <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.3" PrivateAssets="all" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="..\..\tests\**" />
+  </ItemGroup>
+</Project>

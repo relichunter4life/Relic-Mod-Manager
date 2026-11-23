@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "RelicCore",
+  "name": "Relic Mod Manager",
+  "version": "0.7.1",
+  "author": "Relic Hunter",
+  "description": "The mod manager for RuneScape: Dragonwilds, plus the shared parts every Relic mod uses. Shift+F7 opens and hides the window in game.",
+  "groups": [
+    { "id": "window", "label": "Relic Mod Manager window" }
+  ],
+  "settings": [
+    {
+      "key": "AutoOpen",
+      "type": "toggle",
+      "group": "window",
+      "label": "Open at the main menu",
+      "default": true,
+      "personal": true,
+      "tooltip": "Shows this window when the game reaches the main menu. Shift+F7 always opens it."
+    },
+    {
+      "key": "HideInWorld",
+      "type": "toggle",
+      "group": "window",
+      "label": "Hide when a world loads",
+      "default": true,
+      "personal": true,
+      "tooltip": "Tucks the window away when you load into a world, so the game gets your mouse and keyboard."
+    },
+    {
+      "key": "LaunchWindow",
+      "type": "toggle",
+      "group": "window",
+      "label": "Start the window with the game",
+      "default": true,
+      "personal": true,
+      "restart": true,
+      "tooltip": "Turn off to never start the Relic Mod Manager window. Your Relic mods still use their saved settings."
+    }
+  ]
+}
